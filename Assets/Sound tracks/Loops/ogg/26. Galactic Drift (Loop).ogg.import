@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ck3mdb306widm"
+path="res://.godot/imported/26. Galactic Drift (Loop).ogg-968c19d9229622a4467497487e674f9a.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Sound tracks/Loops/ogg/26. Galactic Drift (Loop).ogg"
+dest_files=["res://.godot/imported/26. Galactic Drift (Loop).ogg-968c19d9229622a4467497487e674f9a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

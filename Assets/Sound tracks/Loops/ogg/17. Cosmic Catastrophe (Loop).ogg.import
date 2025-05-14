@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://qxivlo2pq7w6"
+path="res://.godot/imported/17. Cosmic Catastrophe (Loop).ogg-935367b5ca27806e8d13b3e0e7085caa.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Sound tracks/Loops/ogg/17. Cosmic Catastrophe (Loop).ogg"
+dest_files=["res://.godot/imported/17. Cosmic Catastrophe (Loop).ogg-935367b5ca27806e8d13b3e0e7085caa.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

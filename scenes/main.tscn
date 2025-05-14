@@ -1,0 +1,1033 @@
+[gd_scene load_steps=82 format=3 uid="uid://b2esfymr1vcdn"]
+
+[ext_resource type="Script" path="res://Scripts/game_manager.gd" id="1_03sqp"]
+[ext_resource type="Texture2D" uid="uid://cn1wnvogjijg1" path="res://Assets/kloofendal_48d_partly_cloudy_puresky_2k.exr" id="1_8ay3i"]
+[ext_resource type="PackedScene" uid="uid://dp837o0t4lnju" path="res://Prefabs/pause_menu.tscn" id="1_c5n4c"]
+[ext_resource type="PackedScene" uid="uid://ds0ttt0vxav8q" path="res://Prefabs/player_card.tscn" id="3_l666w"]
+[ext_resource type="PackedScene" uid="uid://ctse8jio5o2ln" path="res://Prefabs/char_selector.tscn" id="3_srhpt"]
+[ext_resource type="Texture2D" uid="uid://dvcay8mco2sq" path="res://Assets/terrain/rocky_terrain_02_2k.gltf/textures/rocky_terrain_02_diff_2k.jpg" id="5_20il4"]
+[ext_resource type="Script" path="res://Scripts/sky_control.gd" id="5_iy53n"]
+[ext_resource type="Texture2D" uid="uid://bwenki0o4oo0t" path="res://Assets/terrain/gravelly_sand_2k.gltf/textures/gravelly_sand_diff_2k.jpg" id="5_l70ky"]
+[ext_resource type="PackedScene" uid="uid://b4d1l6c2htvct" path="res://scenes/task_board.tscn" id="6_cef83"]
+[ext_resource type="Texture2D" uid="uid://kmkcil3eeaoj" path="res://Assets/terrain/gravelly_sand_2k.gltf/textures/gravelly_sand_nor_gl_2k.jpg" id="6_duixc"]
+[ext_resource type="Texture2D" uid="uid://bm26ujqulfkie" path="res://Assets/terrain/rocky_terrain_02_2k.gltf/textures/rocky_terrain_02_nor_gl_2k.jpg" id="6_stix3"]
+[ext_resource type="Texture2D" uid="uid://cw04qhwc6iqrc" path="res://Assets/terrain/coast_sand_rock/textures/coast_sand_rocks_02_diff_2k.jpg" id="7_v70aj"]
+[ext_resource type="Texture2D" uid="uid://dwa54dma0c1k4" path="res://Assets/terrain/coast_sand_rock/textures/coast_sand_rocks_02_nor_gl_2k.jpg" id="8_nb57w"]
+[ext_resource type="Texture2D" uid="uid://uck5x2lty5j1" path="res://Assets/terrain/rock_face_03_2k.gltf/textures/rock_face_03_diff_2k.jpg" id="9_v50jl"]
+[ext_resource type="Texture2D" uid="uid://dsd1h7ndeoklv" path="res://Assets/terrain/rock_face_03_2k.gltf/textures/rock_face_03_nor_gl_2k.jpg" id="10_34uhp"]
+[ext_resource type="PackedScene" uid="uid://c4kttpear7psa" path="res://Assets/KayKit_Space_Base_Bits_1.0_EXTRA/Assets/fbx/basemodule_A.fbx" id="13_n8ahn"]
+[ext_resource type="PackedScene" uid="uid://d3sl465g7e6np" path="res://Assets/KayKit_Space_Base_Bits_1.0_EXTRA/Assets/fbx/basemodule_B.fbx" id="15_ljodj"]
+[ext_resource type="Texture2D" uid="uid://dm082wa6sc0vq" path="res://Assets/skip-end-fill.svg" id="17_roc7e"]
+[ext_resource type="PackedScene" uid="uid://bwld3m3kv1433" path="res://scenes/char_selection.tscn" id="18_rk8nb"]
+[ext_resource type="PackedScene" uid="uid://c1qggd28yr4y3" path="res://Prefabs/result_screen.tscn" id="20_ekmtn"]
+[ext_resource type="PackedScene" uid="uid://b34sqt1fkoc4a" path="res://Assets/KayKit_Space_Base_Bits_1.0_EXTRA/Assets/fbx/basemodule_C.fbx" id="21_cshx5"]
+[ext_resource type="PackedScene" uid="uid://bw31anp57fvs4" path="res://Assets/KayKit_Space_Base_Bits_1.0_EXTRA/Assets/fbx/basemodule_D.fbx" id="22_esi6q"]
+[ext_resource type="PackedScene" uid="uid://cvvuprs76kvgc" path="res://Assets/KayKit_Space_Base_Bits_1.0_EXTRA/Assets/fbx/basemodule_garage.fbx" id="23_2mbkw"]
+[ext_resource type="PackedScene" uid="uid://btxa16wvwnnj1" path="res://Assets/KayKit_Space_Base_Bits_1.0_EXTRA/Assets/fbx/drill_structure.fbx" id="24_hwvk8"]
+[ext_resource type="PackedScene" uid="uid://7h8n82gq28sa" path="res://Assets/KayKit_Space_Base_Bits_1.0_EXTRA/Assets/fbx/lander_base.fbx" id="25_65uhv"]
+[ext_resource type="PackedScene" uid="uid://dvt4kyifudq6k" path="res://Assets/KayKit_Space_Base_Bits_1.0_EXTRA/Assets/fbx/rocks_A.fbx" id="26_cf0dr"]
+[ext_resource type="PackedScene" uid="uid://bkaf468tf2gwu" path="res://Assets/KayKit_Space_Base_Bits_1.0_EXTRA/Assets/fbx/rocks_B.fbx" id="27_3tych"]
+[ext_resource type="PackedScene" uid="uid://chkmt3m4c58b7" path="res://Assets/KayKit_Space_Base_Bits_1.0_EXTRA/Assets/fbx/rock_A.fbx" id="28_yi3dr"]
+[ext_resource type="PackedScene" uid="uid://ccoxmc3ykia08" path="res://Assets/KayKit_Space_Base_Bits_1.0_EXTRA/Assets/fbx/rock_B.fbx" id="29_orgcq"]
+[ext_resource type="PackedScene" uid="uid://863cdqidgxau" path="res://Assets/KayKit_Space_Base_Bits_1.0_EXTRA/Assets/fbx/solarpanel.fbx" id="30_murjf"]
+[ext_resource type="PackedScene" uid="uid://hg33obxebaox" path="res://Assets/KayKit_Space_Base_Bits_1.0_EXTRA/Assets/fbx/space_farm_large.fbx" id="31_bemqk"]
+[ext_resource type="PackedScene" uid="uid://bjshml8yjmjjb" path="res://Assets/KayKit_Space_Base_Bits_1.0_EXTRA/Assets/fbx/water_storage.fbx" id="32_2luls"]
+[ext_resource type="PackedScene" uid="uid://32sflqqbn3nl" path="res://Assets/KayKit_Space_Base_Bits_1.0_EXTRA/Assets/fbx/windturbine_tall.fbx" id="33_leve7"]
+[ext_resource type="PackedScene" uid="uid://dkhcphxdnlb43" path="res://Assets/KayKit_Space_Base_Bits_1.0_EXTRA/Assets/fbx/spacetruck.fbx" id="34_is028"]
+[ext_resource type="PackedScene" uid="uid://yql00kh8ugdt" path="res://Assets/KayKit_Space_Base_Bits_1.0_EXTRA/Assets/fbx/roofmodule_solarpanels.fbx" id="35_gbndm"]
+[ext_resource type="PackedScene" uid="uid://cm5lo52iddrlq" path="res://Assets/Env/Tree_12_Var_02.fbx" id="37_g5ybm"]
+[ext_resource type="PackedScene" uid="uid://c8ram87k2b01l" path="res://Assets/Env/Tree_15_Var_01.fbx" id="38_3kg7n"]
+[ext_resource type="PackedScene" uid="uid://bc12hfsdjdm7s" path="res://Assets/Env/Tree_16_Var_01.fbx" id="39_xj8gs"]
+[ext_resource type="PackedScene" uid="uid://b7de03f27jvst" path="res://Assets/Env/Tree_15_Var_05.fbx" id="40_skalx"]
+[ext_resource type="PackedScene" uid="uid://flkakump38dc" path="res://Assets/Env/Tree_15_Var_04.fbx" id="41_epps3"]
+[ext_resource type="PackedScene" uid="uid://bhjihl8wa6y7q" path="res://Assets/Env/Tree_15_Var_02.fbx" id="42_uqs2y"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_54mvo"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3mrvk"]
+bg_color = Color(0.820505, 0.650788, 0.895381, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_680aq"]
+bg_color = Color(0.556863, 0.266667, 0.678431, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_opccv"]
+bg_color = Color(0.698363, 0.727668, 0.919848, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k3y4m"]
+bg_color = Color(0.188235, 0.2, 0.419608, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_imv7q"]
+bg_color = Color(0.983808, 0.664436, 0.6131, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8xjva"]
+bg_color = Color(0.905882, 0.298039, 0.235294, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dsbyr"]
+bg_color = Color(0.614366, 0.996934, 0.72519, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tl0qf"]
+bg_color = Color(0.180392, 0.8, 0.443137, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qh40x"]
+bg_color = Color(0.728822, 0.728822, 0.728822, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w2opb"]
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1kl51"]
+bg_color = Color(1, 0.745098, 0.462745, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7x1kd"]
+bg_color = Color(0.941176, 0.576471, 0.168627, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d61gb"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_bottom_right = 30
+
+[sub_resource type="LabelSettings" id="LabelSettings_fwf3n"]
+font_size = 30
+font_color = Color(0.0430392, 0.0430392, 0.0430392, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_r07fn"]
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_6sdyl"]
+font_size = 50
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qop6u"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_right = 30
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dgfjj"]
+corner_radius_top_right = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_75d6d"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_right = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wlnui"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1d36c"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+
+[sub_resource type="LabelSettings" id="LabelSettings_yqd8y"]
+font_size = 20
+font_color = Color(0.0430392, 0.0430392, 0.0430392, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fgn5a"]
+bg_color = Color(0.964706, 0.898039, 0.552941, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tlnmj"]
+bg_color = Color(0.976471, 0.792157, 0.141176, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="Shader" id="Shader_o3upi"]
+code = "
+// NOTE: Shader automatically converted from Godot Engine 4.3.stable's PanoramaSkyMaterial.
+
+shader_type sky;
+
+uniform sampler2D source_panorama : filter_linear, source_color, hint_default_black;
+uniform float exposure : hint_range(0, 128) = 1.0;
+uniform float spd = 0.002;
+
+void sky() {
+	
+	vec2 sky_coord = vec2(SKY_COORDS.x + TIME * spd, SKY_COORDS.y);
+	
+	COLOR = texture(source_panorama, SKY_COORDS).rgb * exposure;
+}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_a5548"]
+shader = SubResource("Shader_o3upi")
+shader_parameter/exposure = 1.0
+shader_parameter/spd = 0.002
+shader_parameter/source_panorama = ExtResource("1_8ay3i")
+
+[sub_resource type="Sky" id="Sky_wiq72"]
+sky_material = SubResource("ShaderMaterial_a5548")
+
+[sub_resource type="Environment" id="Environment_qei5e"]
+background_mode = 2
+sky = SubResource("Sky_wiq72")
+ambient_light_color = Color(0.959033, 0.819053, 0.232954, 1)
+
+[sub_resource type="Gradient" id="Gradient_lyw3q"]
+offsets = PackedFloat32Array(0.2, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_ik3d3"]
+noise_type = 2
+frequency = 0.03
+cellular_jitter = 3.0
+cellular_return_type = 0
+domain_warp_enabled = true
+domain_warp_type = 1
+domain_warp_amplitude = 50.0
+domain_warp_fractal_type = 2
+domain_warp_fractal_lacunarity = 1.5
+domain_warp_fractal_gain = 1.0
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_oi2u8"]
+seamless = true
+color_ramp = SubResource("Gradient_lyw3q")
+noise = SubResource("FastNoiseLite_ik3d3")
+
+[sub_resource type="Terrain3DMaterial" id="Terrain3DMaterial_uui8k"]
+_shader_parameters = {
+"blend_sharpness": 0.87,
+"height_blending": true,
+"macro_variation1": Color(1, 1, 1, 1),
+"macro_variation2": Color(1, 1, 1, 1),
+"noise1_angle": 0.0,
+"noise1_offset": Vector2(0.5, 0.5),
+"noise1_scale": 0.04,
+"noise2_scale": 0.076,
+"noise3_scale": 0.225,
+"noise_texture": SubResource("NoiseTexture2D_oi2u8"),
+"vertex_normals_distance": 128.0
+}
+texture_filtering = 1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_opseq"]
+transparency = 4
+cull_mode = 2
+vertex_color_use_as_albedo = true
+backlight_enabled = true
+backlight = Color(0.5, 0.5, 0.5, 1)
+distance_fade_mode = 1
+distance_fade_min_distance = 960.0
+distance_fade_max_distance = 480.0
+
+[sub_resource type="Terrain3DMeshAsset" id="Terrain3DMeshAsset_wegek"]
+height_offset = 0.5
+density = 10.0
+material_override = SubResource("StandardMaterial3D_opseq")
+generated_type = 1
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_7tp47"]
+name = "gravelly_sand_diff_2k"
+albedo_color = Color(1, 0.654902, 0.615686, 1)
+albedo_texture = ExtResource("5_l70ky")
+normal_texture = ExtResource("6_duixc")
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_qvxmi"]
+name = "coast_sand_rocks_02_diff_2k"
+id = 1
+albedo_texture = ExtResource("7_v70aj")
+normal_texture = ExtResource("8_nb57w")
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_5tyqc"]
+name = "rock_face_03_diff_2k"
+id = 2
+albedo_texture = ExtResource("9_v50jl")
+normal_texture = ExtResource("10_34uhp")
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_jfl00"]
+name = "rocky grass"
+id = 3
+albedo_color = Color(0.623529, 0.803922, 0.462745, 1)
+albedo_texture = ExtResource("5_20il4")
+normal_texture = ExtResource("6_stix3")
+
+[sub_resource type="Terrain3DAssets" id="Terrain3DAssets_ahyo4"]
+mesh_list = Array[Terrain3DMeshAsset]([SubResource("Terrain3DMeshAsset_wegek")])
+texture_list = Array[Terrain3DTextureAsset]([SubResource("Terrain3DTextureAsset_7tp47"), SubResource("Terrain3DTextureAsset_qvxmi"), SubResource("Terrain3DTextureAsset_5tyqc"), SubResource("Terrain3DTextureAsset_jfl00")])
+
+[node name="Main" type="Node3D" node_paths=PackedStringArray("task_board", "end_screen", "status_panel", "time_panel", "timer_panel", "energy_panel", "player_list_ui", "phase_label", "day_number", "sprint_number", "timer_desc", "timer_clock", "char_selector_scene", "energy_label", "task_button", "energy_bar", "vic_bar", "morale_bar", "int_bar", "health_bar", "env_bar", "threat_bar", "timer_node", "cam", "buildings")]
+script = ExtResource("1_03sqp")
+task_board = NodePath("UI/TaskBoard")
+player_card = ExtResource("3_l666w")
+char_selector = ExtResource("3_srhpt")
+end_screen = NodePath("UI/End_screen")
+status_panel = NodePath("UI/Status panel")
+time_panel = NodePath("UI/Time panel")
+timer_panel = NodePath("UI/Timer_panel")
+energy_panel = NodePath("UI/Energy panel")
+player_list_ui = NodePath("UI/Player list")
+phase_label = NodePath("UI/Time panel/Phase_txt")
+day_number = NodePath("UI/Time panel/Day_number")
+sprint_number = NodePath("UI/Time panel/Sprint_number")
+timer_desc = NodePath("UI/Timer_panel/Timer_desc")
+timer_clock = NodePath("UI/Timer_panel/Time")
+char_selector_scene = NodePath("UI/CharSelection")
+energy_label = NodePath("UI/Energy panel/Energy_label")
+task_button = NodePath("UI/Task button")
+energy_bar = NodePath("UI/Energy panel/ProgressBar")
+vic_bar = NodePath("UI/Status panel/Victory_label/Vic_score-bar")
+morale_bar = NodePath("UI/Status panel/Morale/ProgressBar")
+int_bar = NodePath("UI/Status panel/Integrity/ProgressBar")
+health_bar = NodePath("UI/Status panel/Health/ProgressBar")
+env_bar = NodePath("UI/Status panel/Environment/ProgressBar")
+threat_bar = NodePath("UI/Status panel/Threat/ProgressBar")
+timer_node = NodePath("Timer")
+cam = NodePath("Camera3D")
+buildings = [NodePath("basemodule_A"), NodePath("basemodule_B"), NodePath("basemodule_C"), NodePath("basemodule_D"), NodePath("basemodule_garage"), NodePath("drill_structure"), NodePath("lander_base"), NodePath("solarpanel"), NodePath("solarpanel2"), NodePath("solarpanel3"), NodePath("space_farm_large"), NodePath("space_farm_large2"), NodePath("space_farm_large3"), NodePath("space_farm_large4"), NodePath("windturbine_tall"), NodePath("windturbine_tall2"), NodePath("spacetruck"), NodePath("spacetruck2"), NodePath("roofmodule_solarpanels")]
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Status panel" type="Panel" parent="UI"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 48.0
+anchor_right = 48.0
+offset_left = -1600.0
+offset_bottom = 128.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_54mvo")
+
+[node name="ColorRect" type="ColorRect" parent="UI/Status panel"]
+layout_mode = 0
+offset_left = 600.0
+offset_top = 16.0
+offset_right = 604.0
+offset_bottom = 112.0
+color = Color(0.856067, 0.856067, 0.856067, 1)
+
+[node name="Morale" type="Label" parent="UI/Status panel"]
+layout_mode = 0
+offset_left = 624.0
+offset_top = 56.0
+offset_right = 687.0
+offset_bottom = 79.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Morale"
+vertical_alignment = 1
+
+[node name="ProgressBar" type="ProgressBar" parent="UI/Status panel/Morale"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -63.0
+offset_top = 24.0
+offset_right = 110.0
+offset_bottom = 51.0
+grow_horizontal = 0
+theme_override_styles/background = SubResource("StyleBoxFlat_3mrvk")
+theme_override_styles/fill = SubResource("StyleBoxFlat_680aq")
+value = 50.0
+show_percentage = false
+
+[node name="Integrity" type="Label" parent="UI/Status panel"]
+layout_mode = 0
+offset_left = 816.0
+offset_top = 56.0
+offset_right = 911.0
+offset_bottom = 79.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Integrity
+"
+vertical_alignment = 1
+
+[node name="ProgressBar" type="ProgressBar" parent="UI/Status panel/Integrity"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -95.0
+offset_top = 24.0
+offset_right = 78.0
+offset_bottom = 51.0
+grow_horizontal = 0
+theme_override_styles/background = SubResource("StyleBoxFlat_opccv")
+theme_override_styles/fill = SubResource("StyleBoxFlat_k3y4m")
+value = 50.0
+show_percentage = false
+
+[node name="Health" type="Label" parent="UI/Status panel"]
+layout_mode = 0
+offset_left = 1008.0
+offset_top = 56.0
+offset_right = 1112.0
+offset_bottom = 79.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Health"
+vertical_alignment = 1
+
+[node name="ProgressBar" type="ProgressBar" parent="UI/Status panel/Health"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -104.0
+offset_top = 24.0
+offset_right = 69.0
+offset_bottom = 51.0
+grow_horizontal = 0
+theme_override_styles/background = SubResource("StyleBoxFlat_imv7q")
+theme_override_styles/fill = SubResource("StyleBoxFlat_8xjva")
+value = 50.0
+show_percentage = false
+
+[node name="ColorRect2" type="ColorRect" parent="UI/Status panel"]
+layout_mode = 0
+offset_left = 1200.0
+offset_top = 24.0
+offset_right = 1204.0
+offset_bottom = 112.0
+color = Color(0.856067, 0.856067, 0.856067, 1)
+
+[node name="Environment" type="Label" parent="UI/Status panel"]
+layout_mode = 0
+offset_left = 1224.0
+offset_top = 56.0
+offset_right = 1328.0
+offset_bottom = 79.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Environment"
+vertical_alignment = 1
+
+[node name="ProgressBar" type="ProgressBar" parent="UI/Status panel/Environment"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -104.0
+offset_top = 24.0
+offset_right = 69.0
+offset_bottom = 51.0
+grow_horizontal = 0
+theme_override_styles/background = SubResource("StyleBoxFlat_dsbyr")
+theme_override_styles/fill = SubResource("StyleBoxFlat_tl0qf")
+value = 50.0
+show_percentage = false
+
+[node name="Threat" type="Label" parent="UI/Status panel"]
+layout_mode = 0
+offset_left = 1416.0
+offset_top = 56.0
+offset_right = 1520.0
+offset_bottom = 79.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Threat"
+vertical_alignment = 1
+
+[node name="ProgressBar" type="ProgressBar" parent="UI/Status panel/Threat"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -104.0
+offset_top = 24.0
+offset_right = 69.0
+offset_bottom = 51.0
+grow_horizontal = 0
+theme_override_styles/background = SubResource("StyleBoxFlat_qh40x")
+theme_override_styles/fill = SubResource("StyleBoxFlat_w2opb")
+value = 50.0
+show_percentage = false
+
+[node name="Victory_label" type="Label" parent="UI/Status panel"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 8.0
+offset_right = 274.0
+offset_bottom = 50.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Victory Score"
+vertical_alignment = 1
+
+[node name="Vic_score-bar" type="ProgressBar" parent="UI/Status panel/Victory_label"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -250.0
+offset_top = 72.0
+offset_right = 302.0
+offset_bottom = 99.0
+grow_horizontal = 0
+theme_override_styles/background = SubResource("StyleBoxFlat_1kl51")
+theme_override_styles/fill = SubResource("StyleBoxFlat_7x1kd")
+value = 50.0
+show_percentage = false
+
+[node name="composition" type="Label" parent="UI/Status panel/Victory_label"]
+layout_mode = 0
+offset_top = 40.0
+offset_right = 272.0
+offset_bottom = 63.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Security + Integrity + Health + Environment"
+vertical_alignment = 1
+
+[node name="Internal Label" type="Label" parent="UI/Status panel"]
+layout_mode = 0
+offset_left = 624.0
+offset_top = 8.0
+offset_right = 874.0
+offset_bottom = 50.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Internal factor"
+vertical_alignment = 1
+
+[node name="External Label" type="Label" parent="UI/Status panel"]
+layout_mode = 0
+offset_left = 1224.0
+offset_top = 8.0
+offset_right = 1474.0
+offset_bottom = 50.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "External  factor"
+vertical_alignment = 1
+
+[node name="Time panel" type="Panel" parent="UI"]
+layout_mode = 0
+offset_right = 256.0
+offset_bottom = 128.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_d61gb")
+
+[node name="Phase_txt" type="Label" parent="UI/Time panel"]
+layout_mode = 0
+offset_left = 8.0
+offset_right = 248.0
+offset_bottom = 48.0
+text = "Foundation"
+label_settings = SubResource("LabelSettings_fwf3n")
+horizontal_alignment = 1
+
+[node name="Day" type="Label" parent="UI/Time panel"]
+layout_mode = 0
+offset_left = 165.0
+offset_top = 40.0
+offset_right = 212.0
+offset_bottom = 63.0
+text = "Day"
+label_settings = SubResource("LabelSettings_r07fn")
+horizontal_alignment = 1
+
+[node name="Day_number" type="Label" parent="UI/Time panel"]
+layout_mode = 0
+offset_left = 154.0
+offset_top = 56.0
+offset_right = 222.0
+offset_bottom = 125.0
+text = "1"
+label_settings = SubResource("LabelSettings_6sdyl")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprint" type="Label" parent="UI/Time panel"]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 40.0
+offset_right = 79.0
+offset_bottom = 63.0
+text = "Sprint"
+label_settings = SubResource("LabelSettings_r07fn")
+horizontal_alignment = 1
+
+[node name="Sprint_number" type="Label" parent="UI/Time panel"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 56.0
+offset_right = 92.0
+offset_bottom = 125.0
+text = "1"
+label_settings = SubResource("LabelSettings_6sdyl")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="UI/Time panel"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 48.0
+offset_right = 132.0
+offset_bottom = 112.0
+color = Color(0.854902, 0.854902, 0.854902, 1)
+
+[node name="Player list" type="Control" parent="UI"]
+layout_mode = 1
+anchor_left = 48.0
+anchor_top = 3.2
+anchor_right = 48.0
+anchor_bottom = 3.2
+offset_left = -384.0
+offset_right = -0.00012207
+offset_bottom = 896.0
+
+[node name="Task button" type="Button" parent="UI"]
+layout_mode = 0
+offset_top = 912.0
+offset_right = 232.0
+offset_bottom = 1080.0
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/hover = SubResource("StyleBoxFlat_qop6u")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_dgfjj")
+theme_override_styles/normal = SubResource("StyleBoxFlat_75d6d")
+text = "Scrum
+Board"
+icon_alignment = 1
+
+[node name="TaskBoard" parent="UI" instance=ExtResource("6_cef83")]
+visible = false
+layout_mode = 1
+offset_right = 1872.0
+offset_bottom = 1040.0
+
+[node name="Close" type="Button" parent="UI/TaskBoard"]
+layout_mode = 0
+offset_left = 1832.0
+offset_top = 24.0
+offset_right = 1896.0
+offset_bottom = 88.0
+theme_override_colors/font_color = Color(0.203922, 0.815686, 0.345098, 1)
+theme_override_font_sizes/font_size = 41
+text = "X"
+flat = true
+
+[node name="Timer_panel" type="Panel" parent="UI"]
+layout_mode = 0
+offset_left = 696.0
+offset_top = 960.0
+offset_right = 1376.0
+offset_bottom = 1080.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_wlnui")
+
+[node name="skip_btn" type="Button" parent="UI/Timer_panel"]
+layout_mode = 0
+offset_left = 592.0
+offset_top = 32.0
+offset_right = 664.0
+offset_bottom = 104.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+icon = ExtResource("17_roc7e")
+flat = true
+icon_alignment = 1
+vertical_icon_alignment = 0
+
+[node name="Timer_label" type="Label" parent="UI/Timer_panel"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 16.0
+offset_right = 69.0
+offset_bottom = 39.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Timer"
+vertical_alignment = 1
+
+[node name="Timer_desc" type="RichTextLabel" parent="UI/Timer_panel"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 40.0
+offset_right = 392.0
+offset_bottom = 104.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+text = "[font_size=45]Meeting[/font_size]"
+scroll_active = false
+shortcut_keys_enabled = false
+
+[node name="Time" type="Label" parent="UI/Timer_panel"]
+layout_mode = 0
+offset_left = 432.0
+offset_top = 24.0
+offset_right = 586.0
+offset_bottom = 107.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 60
+text = "04:50"
+vertical_alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="UI/Timer_panel"]
+layout_mode = 0
+offset_left = 408.0
+offset_top = 32.0
+offset_right = 412.0
+offset_bottom = 104.0
+color = Color(0, 0, 0, 1)
+
+[node name="Energy panel" type="Panel" parent="UI"]
+layout_mode = 0
+offset_top = 184.0
+offset_right = 104.0
+offset_bottom = 832.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_1d36c")
+
+[node name="Energy_txt" type="Label" parent="UI/Energy panel"]
+layout_mode = 0
+offset_right = 104.0
+offset_bottom = 48.0
+text = "Energy"
+label_settings = SubResource("LabelSettings_yqd8y")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ProgressBar" type="ProgressBar" parent="UI/Energy panel"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 48.0
+offset_right = 72.0
+offset_bottom = 608.0
+theme_override_styles/background = SubResource("StyleBoxFlat_fgn5a")
+theme_override_styles/fill = SubResource("StyleBoxFlat_tlnmj")
+step = 1.0
+value = 50.0
+fill_mode = 3
+show_percentage = false
+
+[node name="Energy_label" type="Label" parent="UI/Energy panel"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 616.0
+offset_right = 81.0
+offset_bottom = 639.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "100/100"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CharSelection" parent="UI" instance=ExtResource("18_rk8nb")]
+visible = false
+layout_mode = 1
+
+[node name="pause_menu" parent="UI" instance=ExtResource("1_c5n4c")]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.53
+anchor_right = 0.5
+anchor_bottom = 0.53
+offset_left = 788.0
+offset_top = 298.8
+offset_right = 1108.0
+offset_bottom = 802.8
+
+[node name="End_screen" parent="UI" instance=ExtResource("20_ekmtn")]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 24.0
+anchor_top = 13.8
+anchor_right = 24.0
+anchor_bottom = 13.8
+offset_left = -736.0
+offset_top = -416.0
+offset_right = 736.0
+offset_bottom = 416.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Camera3D" type="Camera3D" parent="." node_paths=PackedStringArray("directional_light")]
+transform = Transform3D(0.766044, -0.526541, 0.368688, 0, 0.573576, 0.819152, -0.642788, -0.627507, 0.439385, 50, 80, 50)
+environment = SubResource("Environment_qei5e")
+current = true
+script = ExtResource("5_iy53n")
+directional_light = NodePath("../DirectionalLight3D")
+metadata/_edit_lock_ = true
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 61.2061, 0)
+light_color = Color(1, 0.842049, 0.798156, 1)
+light_angular_distance = 45.0
+light_bake_mode = 1
+shadow_enabled = true
+
+[node name="Terrain3D" type="Terrain3D" parent="."]
+data_directory = "res://scenes/main_terrain"
+material = SubResource("Terrain3DMaterial_uui8k")
+assets = SubResource("Terrain3DAssets_ahyo4")
+collision_enabled = false
+top_level = true
+metadata/_edit_lock_ = true
+
+[node name="basemodule_A" parent="." instance=ExtResource("13_n8ahn")]
+transform = Transform3D(-3.1492, 0, 9.49118, 0, 10, 0, -9.49118, 0, -3.1492, -42.7394, 0, -32.569)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="basemodule_A"]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -0.02321, 0.662682, 0.0699515)
+light_energy = 10.0
+light_size = 5.0
+light_bake_mode = 1
+omni_range = 50.0
+omni_shadow_mode = 0
+
+[node name="basemodule_B" parent="." instance=ExtResource("15_ljodj")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -15.6753, 0, -50.5631)
+visible = false
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="basemodule_B"]
+transform = Transform3D(-0.031492, 0, 0.0949118, 0, 0.1, 0, -0.0949118, 0, -0.031492, -0.220885, 0.662682, -0.122887)
+light_energy = 10.0
+light_size = 5.0
+light_bake_mode = 1
+omni_range = 50.0
+omni_shadow_mode = 0
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="basemodule_C" parent="." instance=ExtResource("21_cshx5")]
+transform = Transform3D(-4.99365, 0, 8.66392, 0, 10, 0, -8.66392, 0, -4.99365, -43.5278, 0, -4.80716)
+visible = false
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="basemodule_C"]
+transform = Transform3D(0.0979568, 0, -0.0201112, 0, 0.1, 0, 0.0201112, 0, 0.0979568, 0.0657086, 0.662682, 0.104383)
+light_energy = 10.0
+light_size = 5.0
+light_bake_mode = 1
+omni_range = 50.0
+omni_shadow_mode = 0
+
+[node name="basemodule_D" parent="." instance=ExtResource("22_esi6q")]
+transform = Transform3D(-0.0863925, 0, -9.99963, 0, 10, 0, 9.99963, 0, -0.0863925, -21.5266, -0.243221, 17.8854)
+visible = false
+
+[node name="OmniLight3D4" type="OmniLight3D" parent="basemodule_D"]
+transform = Transform3D(-0.0946362, 0, -0.0323108, 0, 0.1, 0, 0.0323108, 0, -0.0946362, 0.23461, 0.687004, 0.105006)
+light_energy = 10.0
+light_size = 5.0
+light_bake_mode = 1
+omni_range = 50.0
+omni_shadow_mode = 0
+
+[node name="basemodule_garage" parent="." instance=ExtResource("23_2mbkw")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 45.0151, 0, -68.5287)
+visible = false
+
+[node name="OmniLight3D5" type="OmniLight3D" parent="basemodule_garage"]
+transform = Transform3D(-0.031492, 0, 0.0949118, 0, 0.1, 0, -0.0949118, 0, -0.031492, 0.212486, 0.662682, -0.085392)
+light_energy = 10.0
+light_size = 5.0
+light_bake_mode = 1
+omni_range = 50.0
+omni_shadow_mode = 0
+
+[node name="drill_structure" parent="." instance=ExtResource("24_hwvk8")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -82.8494, 0, 54.635)
+visible = false
+
+[node name="OmniLight3D6" type="OmniLight3D" parent="drill_structure"]
+transform = Transform3D(-0.031492, 0, 0.0949118, 0, 0.1, 0, -0.0949118, 0, -0.031492, 0.317872, 0.662682, 0.0291681)
+light_energy = 10.0
+light_size = 5.0
+light_bake_mode = 1
+omni_range = 50.0
+omni_shadow_mode = 0
+
+[node name="lander_base" parent="." instance=ExtResource("25_65uhv")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -7.68542, 0, -17.6281)
+
+[node name="OmniLight3D6" type="OmniLight3D" parent="lander_base"]
+transform = Transform3D(-0.031492, 0, 0.0949118, 0, 0.1, 0, -0.0949118, 0, -0.031492, 0.0936818, 0.662682, 0.18171)
+light_energy = 10.0
+light_size = 5.0
+light_bake_mode = 1
+omni_range = 50.0
+omni_shadow_mode = 0
+
+[node name="rocks_A" parent="." instance=ExtResource("26_cf0dr")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -33.5442, 0, 51.94)
+
+[node name="rocks_A2" parent="." instance=ExtResource("26_cf0dr")]
+transform = Transform3D(3.19852, 0, -9.47467, 0, 10, 0, 9.47467, 0, 3.19852, -33.5442, 0, 66.8979)
+
+[node name="rocks_A4" parent="." instance=ExtResource("26_cf0dr")]
+transform = Transform3D(3.19852, 0, -9.47467, 0, 10, 0, 9.47467, 0, 3.19852, -2.73573, 0, -109.442)
+
+[node name="rocks_A5" parent="." instance=ExtResource("26_cf0dr")]
+transform = Transform3D(3.19852, 0, -9.47467, 0, 10, 0, 9.47467, 0, 3.19852, -0.201103, 0.887405, -128.858)
+
+[node name="rocks_A6" parent="." instance=ExtResource("26_cf0dr")]
+transform = Transform3D(9.99833, -0.00402409, 0.182949, 0.00442341, 9.99998, -0.0217921, -0.18294, 0.0218694, 9.9983, -1.62008, 0.887405, -121.914)
+
+[node name="rocks_A3" parent="." instance=ExtResource("26_cf0dr")]
+transform = Transform3D(3.19852, 0, -9.47467, 0, 10, 0, 9.47467, 0, 3.19852, 32.5811, 0, 66.8979)
+
+[node name="rocks_B" parent="." instance=ExtResource("27_3tych")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -97.4743, 0, -69.3189)
+
+[node name="rock_A" parent="." instance=ExtResource("28_yi3dr")]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, -70.1976, 0, -96.3809)
+
+[node name="rock_B" parent="." instance=ExtResource("29_orgcq")]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 19.308, 0, 127.184)
+
+[node name="solarpanel" parent="." instance=ExtResource("30_murjf")]
+transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 0.0212708, 0, 49.7109)
+visible = false
+
+[node name="solarpanel2" parent="." instance=ExtResource("30_murjf")]
+transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 19.3594, 0, 49.7109)
+visible = false
+
+[node name="solarpanel3" parent="." instance=ExtResource("30_murjf")]
+transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 39.4279, 0, 49.7109)
+visible = false
+
+[node name="space_farm_large" parent="." instance=ExtResource("31_bemqk")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 70.315, 0, -48.9949)
+visible = false
+
+[node name="OmniLight3D7" type="OmniLight3D" parent="space_farm_large"]
+transform = Transform3D(-0.031492, 0, 0.0949118, 0, 0.1, 0, -0.0949118, 0, -0.031492, 0.0565577, 0.571061, 0.032084)
+light_energy = 10.0
+light_size = 5.0
+light_bake_mode = 1
+omni_range = 50.0
+omni_shadow_mode = 0
+
+[node name="space_farm_large2" parent="." instance=ExtResource("31_bemqk")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 89.7763, 0, -48.9949)
+visible = false
+
+[node name="OmniLight3D8" type="OmniLight3D" parent="space_farm_large2"]
+transform = Transform3D(-0.031492, 0, 0.0949118, 0, 0.1, 0, -0.0949118, 0, -0.031492, -0.0457382, 0.571061, 0.032084)
+light_energy = 10.0
+light_size = 5.0
+light_bake_mode = 1
+omni_range = 50.0
+omni_shadow_mode = 0
+
+[node name="space_farm_large3" parent="." instance=ExtResource("31_bemqk")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 89.7763, 0, -31.9795)
+visible = false
+
+[node name="OmniLight3D9" type="OmniLight3D" parent="space_farm_large3"]
+transform = Transform3D(-0.031492, 0, 0.0949118, 0, 0.1, 0, -0.0949118, 0, -0.031492, -0.0457382, 0.571061, 0.0635574)
+light_energy = 10.0
+light_size = 5.0
+light_bake_mode = 1
+omni_range = 50.0
+omni_shadow_mode = 0
+
+[node name="space_farm_large4" parent="." instance=ExtResource("31_bemqk")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 70.1331, 0, -31.9795)
+visible = false
+
+[node name="OmniLight3D10" type="OmniLight3D" parent="space_farm_large4"]
+transform = Transform3D(-0.031492, 0, 0.0949118, 0, 0.1, 0, -0.0949118, 0, -0.031492, -0.0946841, 0.571061, 0.0635574)
+light_energy = 10.0
+light_size = 5.0
+light_bake_mode = 1
+omni_range = 50.0
+omni_shadow_mode = 0
+
+[node name="water_storage" parent="." instance=ExtResource("32_2luls")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 9.5006, 0, -80.9732)
+visible = false
+
+[node name="windturbine_tall" parent="." instance=ExtResource("33_leve7")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -57.7849, 0, 24.723)
+visible = false
+
+[node name="windturbine_tall2" parent="." instance=ExtResource("33_leve7")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -76.1898, -0.201591, 24.2203)
+visible = false
+
+[node name="spacetruck" parent="." instance=ExtResource("34_is028")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 54.942, 0, -52.3518)
+visible = false
+
+[node name="spacetruck2" parent="." instance=ExtResource("34_is028")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 33.4444, 0, -52.3518)
+visible = false
+
+[node name="roofmodule_solarpanels" parent="." instance=ExtResource("35_gbndm")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -42, 10, -32)
+visible = false
+
+[node name="Tree_12_Var_02" parent="." instance=ExtResource("37_g5ybm")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -135.162, 0, -39.0296)
+
+[node name="Tree_15_Var_01" parent="." instance=ExtResource("38_3kg7n")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 31.1985, 0, -116.008)
+
+[node name="Tree_16_Var_01" parent="." instance=ExtResource("39_xj8gs")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -78.4493, -7.68948, 99.068)
+
+[node name="Tree_15_Var_05" parent="." instance=ExtResource("40_skalx")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -142.057, 0, -6.95712)
+
+[node name="Tree_15_Var_04" parent="." instance=ExtResource("41_epps3")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 73.4129, -0.353371, 33.8123)
+
+[node name="Tree_15_Var_06" parent="." instance=ExtResource("40_skalx")]
+transform = Transform3D(-1.52106, 0, -9.88364, 0, 10, 0, 9.88364, 0, -1.52106, 114.896, 0, -95.9527)
+
+[node name="Tree_15_Var_02" parent="." instance=ExtResource("42_uqs2y")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 7.66288, -0.975063, 133.36)
+
+[connection signal="pressed" from="UI/Task button" to="." method="open_task_board"]
+[connection signal="pressed" from="UI/TaskBoard/Close" to="." method="close_task_board"]
+[connection signal="pressed" from="UI/Timer_panel/skip_btn" to="." method="next_timer"]
+[connection signal="timeout" from="Timer" to="." method="next_timer"]

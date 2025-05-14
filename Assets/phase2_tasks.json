@@ -1,0 +1,382 @@
+[
+	{
+		"task_name": "Establish Forward Outpost",
+		"task_energy_consumption": 25,
+		"task_id": 21,
+		"task_effect": {
+			"vic_sec": 10,
+			"vic_sur": 20,
+			"vic_dev": 15,
+			"morale": 5,
+			"integrity": 10,
+			"health": -5,
+			"environment": -10,
+			"threat": 10,
+			"max_energy_mod": 0
+		},
+	"task_game": [3,5],
+		"task_difficulty": 2,
+		"task_description": "Construct a small base to secure a strategic location and extend resource access."
+	},
+	{
+		"task_name": "Expand Habitation Zone",
+		"task_energy_consumption": 20,
+		"task_id": 22,
+		"task_effect": {
+			"vic_sec": 0,
+			"vic_sur": 15,
+			"vic_dev": 10,
+			"morale": 20,
+			"integrity": 15,
+			"health": 10,
+			"environment": 0,
+			"threat": 0,
+			"max_energy_mod": 0
+		},
+	"task_game": [3,5],
+		"task_difficulty": 1,
+		"task_description": "Increase the size of the living quarters to accommodate new crew members and specialists."
+	},
+	{
+		"task_name": "Develop Exploration Vehicle",
+		"task_energy_consumption": 30,
+		"task_id": 23,
+		"task_effect": {
+			"vic_sec": 0,
+			"vic_sur": 25,
+			"vic_dev": 20,
+			"morale": 10,
+			"integrity": 15,
+			"health": 0,
+			"environment": -5,
+			"threat": 5,
+			"max_energy_mod": 0
+		},
+		"task_difficulty": 2,
+	"task_game": [3,5],
+		"task_description": "Design and build a vehicle for efficient long-range exploration and transportation."
+	},
+	{
+		"task_name": "Establish Long-Range Comms",
+		"task_energy_consumption": 22,
+		"task_id": 24,
+		"task_effect": {
+			"vic_sec": 15,
+			"vic_sur": 10,
+			"vic_dev": 20,
+			"morale": 15,
+			"integrity": 20,
+			"health": 0,
+			"environment": 0,
+			"threat": -5,
+			"max_energy_mod": 10
+		},
+	"task_game": [3,5],
+		"task_difficulty": 2,
+		"task_description": "Construct a communication array to maintain contact with distant settlements or orbital stations."
+	},
+	{
+		"task_name": "Deploy Automated Harvesters",
+		"task_energy_consumption": 35,
+		"task_id": 25,
+		"task_effect": {
+			"vic_sec": 20,
+			"vic_sur": 25,
+			"vic_dev": 25,
+			"morale": -5,
+			"integrity": 10,
+			"health": -10,
+			"environment": -15,
+			"threat": 10,
+			"max_energy_mod": 0
+		},
+		"task_difficulty": 3,
+	"task_game": [3,5],
+		"task_description": "Set up automated machinery to extract and transport resources from remote deposits."
+	},
+	{
+		"task_name": "Survey New Territories",
+		"task_energy_consumption": 18,
+		"task_id": 26,
+		"task_effect": {
+			"vic_sec": 5,
+			"vic_sur": 20,
+			"vic_dev": 10,
+			"morale": 10,
+			"integrity": 10,
+			"health": -2,
+			"environment": -2,
+			"threat": 8,
+			"max_energy_mod": 0
+		},
+		"task_difficulty": 1,
+	"task_game": [3,5],
+		"task_description": "Explore and map unexplored regions to identify potential resources and hazards."
+	},
+	{
+		"task_name": "Establish Trade Route",
+		"task_energy_consumption": 22,
+		"task_id": 27,
+		"task_effect": {
+			"vic_sec": 10,
+			"vic_sur": 15,
+			"vic_dev": 20,
+			"morale": 12,
+			"integrity": 15,
+			"health": 0,
+			"environment": 0,
+			"threat": 0,
+			"max_energy_mod": 0
+		},
+		"task_difficulty": 2,
+	"task_game": [3,5],
+		"task_description": "Create a route for trade with other settlements to acquire valuable goods and technology."
+	},
+	{
+		"task_name": "Fortify Perimeter",
+		"task_energy_consumption": 28,
+		"task_id": 28,
+		"task_effect": {
+			"vic_sec": 25,
+			"vic_sur": 10,
+			"vic_dev": 5,
+			"morale": 8,
+			"integrity": 18,
+			"health": -5,
+			"environment": -5,
+			"threat": -15,
+			"max_energy_mod": 0
+		},
+		"task_difficulty": 2,
+	"task_game": [3,5],
+		"task_description": "Enhance the base defenses to protect against hostile encounters and territorial disputes."
+	},
+	{
+		"task_name": "Research Advanced Tech",
+		"task_energy_consumption": 32,
+		"task_id": 29,
+		"task_effect": {
+			"vic_sec": 12,
+			"vic_sur": 18,
+			"vic_dev": 25,
+			"morale": 15,
+			"integrity": 20,
+			"health": 0,
+			"environment": 5,
+			"threat": -8,
+			"max_energy_mod": 15
+		},
+	"task_game": [3],
+		"task_difficulty": 3,
+		"task_description": "Investigate and develop new technologies to improve efficiency and expand capabilities."
+	},
+	{
+		"task_name": "Construct Heavy Machinery",
+		"task_energy_consumption": 38,
+		"task_id": 30,
+		"task_effect": {
+			"vic_sec": 15,
+			"vic_sur": 22,
+			"vic_dev": 30,
+			"morale": -2,
+			"integrity": 12,
+			"health": -8,
+			"environment": -12,
+			"threat": 12,
+			"max_energy_mod": 0
+		},
+	"task_game": [3,5],
+		"task_difficulty": 3,
+		"task_description": "Build large-scale equipment for resource extraction, construction, or defense."
+	},
+	{
+		"task_name": "Establish Agricultural Hub",
+		"task_energy_consumption": 24,
+		"task_id": 31,
+		"task_effect": {
+			"vic_sec": 0,
+			"vic_sur": 28,
+			"vic_dev": 12,
+			"morale": 18,
+			"integrity": 10,
+			"health": 10,
+			"environment": 5,
+			"threat": 0,
+			"max_energy_mod": 0
+		},
+		"task_difficulty": 2,
+	"task_game": [3,5],
+		"task_description": "Develop a centralized facility for large-scale food production and distribution."
+	},
+	{
+		"task_name": "Optimize Resource Flow",
+		"task_energy_consumption": 21,
+		"task_id": 32,
+		"task_effect": {
+			"vic_sec": 8,
+			"vic_sur": 16,
+			"vic_dev": 22,
+			"morale": 14,
+			"integrity": 16,
+			"health": 0,
+			"environment": 2,
+			"threat": 0,
+			"max_energy_mod": 0
+		},
+		"task_difficulty": 2,
+	"task_game": [3,5],
+		"task_description": "Improve the transportation and management of resources to minimize waste and maximize efficiency."
+	},
+	{
+		"task_name": "Expand Energy Grid",
+		"task_energy_consumption": 26,
+		"task_id": 33,
+		"task_effect": {
+			"vic_sec": 0,
+			"vic_sur": 12,
+			"vic_dev": 24,
+			"morale": 10,
+			"integrity": 14,
+			"health": 0,
+			"environment": 8,
+			"threat": 0,
+			"max_energy_mod": 25
+		},
+		"task_difficulty": 2,
+	"task_game": [3,5],
+		"task_description": "Increase the power generation and distribution network to support expanded operations."
+	},
+	{
+		"task_name": "Develop Defensive Technology",
+		"task_energy_consumption": 31,
+		"task_id": 34,
+		"task_effect": {
+			"vic_sec": 22,
+			"vic_sur": 14,
+			"vic_dev": 18,
+			"morale": 6,
+			"integrity": 18,
+			"health": -4,
+			"environment": -4,
+			"threat": -18,
+			"max_energy_mod": 0
+		},
+		"task_difficulty": 3,
+	"task_game": [3,5],
+		"task_description": "Research and deploy advanced defensive systems to protect the base from external threats."
+	},
+	{
+		"task_name": "Establish Medical Center",
+		"task_energy_consumption": 23,
+		"task_id": 35,
+		"task_effect": {
+			"vic_sec": 0,
+			"vic_sur": 14,
+			"vic_dev": 16,
+			"morale": 16,
+			"integrity": 12,
+			"health": 25,
+			"environment": 0,
+			"threat": 0,
+			"max_energy_mod": 0
+		},
+		"task_difficulty": 2,
+	"task_game": [3,5],
+		"task_description": "Construct a dedicated facility for advanced medical treatment and research."
+	},
+	{
+		"task_name": "Initiate Limited Terraform",
+		"task_energy_consumption": 40,
+		"task_id": 36,
+		"task_effect": {
+			"vic_sec": 0,
+			"vic_sur": 20,
+			"vic_dev": 30,
+			"morale": 8,
+			"integrity": 10,
+			"health": 10,
+			"environment": 25,
+			"threat": -10,
+			"max_energy_mod": 0
+		},
+		"task_difficulty": 3,
+	"task_game": [3,5],
+		"task_description": "Begin localized efforts to improve environmental conditions in key areas, such as increasing atmospheric pressure or reducing toxicity."
+	},
+	{
+		"task_name": "Establish Research Outposts",
+		"task_energy_consumption": 27,
+		"task_id": 37,
+		"task_effect": {
+			"vic_sec": 12,
+			"vic_sur": 16,
+			"vic_dev": 28,
+			"morale": 14,
+			"integrity": 20,
+			"health": -2,
+			"environment": 5,
+			"threat": 2,
+			"max_energy_mod": 0
+		},
+		"task_difficulty": 2,
+	"task_game": [3,5],
+		"task_description": "Construct specialized facilities dedicated to scientific research in various fields to drive innovation and discovery."
+	},
+	{
+		"task_name": "Develop Advanced Robotics",
+		"task_energy_consumption": 33,
+		"task_id": 38,
+		"task_effect": {
+			"vic_sec": 18,
+			"vic_sur": 24,
+			"vic_dev": 24,
+			"morale": 4,
+			"integrity": 14,
+			"health": -6,
+			"environment": -8,
+			"threat": 14,
+			"max_energy_mod": 0
+		},
+		"task_difficulty": 3,
+	"task_game": [3,5],
+		"task_description": "Design and build highly capable robots to automate tasks in resource extraction, construction, and defense."
+	},
+	{
+		"task_name": "Establish Survey Teams",
+		"task_energy_consumption": 29,
+		"task_id": 39,
+		"task_effect": {
+			"vic_sec": 16,
+			"vic_sur": 18,
+			"vic_dev": 16,
+			"morale": 20,
+			"integrity": 22,
+			"health": 0,
+			"environment": 10,
+			"threat": -12,
+			"max_energy_mod": 0
+		},
+		"task_difficulty": 2,
+	"task_game": [3,5],
+		"task_description": "Organize and deploy specialized teams to explore and assess the long-term potential of the surrounding region."
+	},
+	{
+		"task_name": "Research Orbital Infrastructure",
+		"task_energy_consumption": 45,
+		"task_id": 40,
+		"task_effect": {
+			"vic_sec": 20,
+			"vic_sur": 30,
+			"vic_dev": 35,
+			"morale": 10,
+			"integrity": 15,
+			"health": -15,
+			"environment": -20,
+			"threat": 5,
+			"max_energy_mod": 0
+		},
+		"task_difficulty": 3,
+	"task_game": [3,5],
+		"task_description": "Conduct preliminary research into the feasibility of establishing infrastructure in orbit, such as space stations or resource platforms."
+	}
+]

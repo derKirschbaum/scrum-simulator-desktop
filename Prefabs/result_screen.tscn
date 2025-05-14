@@ -1,0 +1,104 @@
+[gd_scene load_steps=3 format=3 uid="uid://c1qggd28yr4y3"]
+
+[ext_resource type="Script" path="res://Scripts/result_screen.gd" id="1_l56xa"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fiudr"]
+bg_color = Color(0.982343, 0.982342, 0.982342, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[node name="End_screen" type="Panel"]
+offset_left = 192.0
+offset_top = 120.0
+offset_right = 1664.0
+offset_bottom = 952.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_fiudr")
+script = ExtResource("1_l56xa")
+
+[node name="Stars" type="Label" parent="."]
+layout_mode = 0
+offset_top = 128.0
+offset_right = 1472.0
+offset_bottom = 272.0
+theme_override_font_sizes/font_size = 150
+text = "😔😐🙂😄🤩"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Result_header" type="Label" parent="."]
+layout_mode = 0
+offset_right = 1472.0
+offset_bottom = 120.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 80
+text = "Result"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="total_score_header" type="Label" parent="."]
+layout_mode = 0
+offset_top = 328.0
+offset_right = 1472.0
+offset_bottom = 397.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 80
+text = "Total Score"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="total_score_label" type="Label" parent="total_score_header"]
+layout_mode = 0
+offset_left = -8.0
+offset_top = 104.0
+offset_right = 1464.0
+offset_bottom = 187.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 60
+text = "99999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Score_categories" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -208.0
+offset_top = -304.0
+offset_right = 208.0
+offset_bottom = -224.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "Score Categories"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="categories_label" type="Label" parent="Score_categories"]
+layout_mode = 0
+offset_top = 80.0
+offset_right = 416.0
+offset_bottom = 200.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "Security: %d x%.1f = %.2f
+Survivability: %d x%.1f = %.2f
+Developement: %d x%.1f = %.2f"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="back_to_main_menu" type="Button" parent="."]
+layout_mode = 0
+offset_left = 616.0
+offset_top = 752.0
+offset_right = 857.0
+offset_bottom = 807.0
+theme_override_font_sizes/font_size = 25
+text = "Back to Main menu"
+
+[connection signal="pressed" from="back_to_main_menu" to="." method="back_to_menu"]

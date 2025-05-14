@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cd0auubfhutsr"
+path="res://.godot/imported/4. Asteroid Armageddon (Loop).ogg-4255e2a12b061c5972a68110bed6e844.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Sound tracks/Loops/ogg/4. Asteroid Armageddon (Loop).ogg"
+dest_files=["res://.godot/imported/4. Asteroid Armageddon (Loop).ogg-4255e2a12b061c5972a68110bed6e844.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

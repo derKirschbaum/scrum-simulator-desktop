@@ -1,0 +1,62 @@
+[gd_scene load_steps=5 format=3 uid="uid://ctwg1qm5btawd"]
+
+[ext_resource type="Script" path="res://Scripts/taskboard/postit.gd" id="1_yj14v"]
+[ext_resource type="Texture2D" uid="uid://bvwsn47bc53y0" path="res://Assets/warning.png" id="2_lvs3a"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ghg8c"]
+font_size = 15
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u425o"]
+size = Vector2(184, 40)
+
+[node name="Post_it" type="CharacterBody2D"]
+collision_mask = 0
+input_pickable = true
+motion_mode = 1
+script = ExtResource("1_yj14v")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 152.0
+offset_top = 200.0
+offset_right = 336.0
+offset_bottom = 240.0
+mouse_filter = 2
+mouse_force_pass_scroll_events = false
+mouse_default_cursor_shape = 6
+color = Color(1, 1, 0.780392, 1)
+
+[node name="header" type="Label" parent="."]
+offset_left = 152.0
+offset_top = 200.0
+offset_right = 336.0
+offset_bottom = 235.0
+label_settings = SubResource("LabelSettings_ghg8c")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="description" type="RichTextLabel" parent="."]
+offset_left = 160.0
+offset_top = 232.0
+offset_right = 328.0
+offset_bottom = 408.0
+mouse_filter = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+
+[node name="assigned_player" type="Sprite2D" parent="."]
+position = Vector2(336, 200)
+scale = Vector2(0.1, 0.1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(244, 220)
+shape = SubResource("RectangleShape2D_u425o")
+
+[node name="emergency_icon" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(240, 184)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_lvs3a")
+
+[connection signal="mouse_entered" from="." to="." method="mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="mouse_exited"]

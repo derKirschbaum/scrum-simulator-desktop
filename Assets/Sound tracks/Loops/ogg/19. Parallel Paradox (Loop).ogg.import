@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://d18s3f56i50l8"
+path="res://.godot/imported/19. Parallel Paradox (Loop).ogg-8e227530fde52c4acde884cba96da178.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Sound tracks/Loops/ogg/19. Parallel Paradox (Loop).ogg"
+dest_files=["res://.godot/imported/19. Parallel Paradox (Loop).ogg-8e227530fde52c4acde884cba96da178.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

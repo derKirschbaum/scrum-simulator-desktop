@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b18acxawex08c"
+path="res://.godot/imported/10. Dark Matter Dawn (Loop).ogg-b5f68e9e0500dfce7158774b2cd311b0.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Sound tracks/Loops/ogg/10. Dark Matter Dawn (Loop).ogg"
+dest_files=["res://.godot/imported/10. Dark Matter Dawn (Loop).ogg-b5f68e9e0500dfce7158774b2cd311b0.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

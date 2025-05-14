@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ckifha1fpujin"
+path="res://.godot/imported/22. Alien Artifact (Loop).ogg-312a2a255d33d79b2828d8d4538b478b.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Sound tracks/Loops/ogg/22. Alien Artifact (Loop).ogg"
+dest_files=["res://.godot/imported/22. Alien Artifact (Loop).ogg-312a2a255d33d79b2828d8d4538b478b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

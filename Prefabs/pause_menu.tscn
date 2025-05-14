@@ -1,0 +1,50 @@
+[gd_scene load_steps=5 format=3 uid="uid://dp837o0t4lnju"]
+
+[ext_resource type="Script" path="res://Scripts/pause_menu.gd" id="1_lr8sx"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o5gqf"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_0xtvd"]
+font_size = 50
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xldcr"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.332881, 0.332881, 0.332881, 1)
+border_blend = true
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[node name="pause_menu" type="Panel"]
+offset_right = 320.0
+offset_bottom = 504.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_o5gqf")
+script = ExtResource("1_lr8sx")
+
+[node name="Paused_label" type="Label" parent="."]
+layout_mode = 0
+offset_right = 320.0
+offset_bottom = 64.0
+text = "Paused"
+label_settings = SubResource("LabelSettings_0xtvd")
+horizontal_alignment = 1
+
+[node name="exit_btn" type="Button" parent="."]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 152.0
+offset_right = 272.0
+offset_bottom = 208.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_xldcr")
+text = "Exit"
+
+[connection signal="pressed" from="exit_btn" to="." method="exit_game"]

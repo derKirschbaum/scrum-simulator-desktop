@@ -1,0 +1,382 @@
+[
+	{
+		"task_name": "Optimize Resource Production",
+		"task_energy_consumption": 25,
+		"task_id": 41,
+		"task_effect": {
+			"vic_sec": 5,
+			"vic_sur": 15,
+			"vic_dev": 20,
+			"morale": 10,
+			"integrity": 15,
+			"health": 0,
+			"environment": 5,
+			"threat": 0,
+			"max_energy_mod": 0
+		},
+		"task_difficulty": 2,
+		"task_game": [3,5],
+		"task_description": "Implement advanced techniques to maximize the output of resource extraction and processing facilities."
+	},
+	{
+		"task_name": "Enhance Habitat Comfort",
+		"task_energy_consumption": 20,
+		"task_id": 42,
+		"task_effect": {
+			"vic_sec": 0,
+			"vic_sur": 10,
+			"vic_dev": 10,
+			"morale": 25,
+			"integrity": 15,
+			"health": 10,
+			"environment": 5,
+			"threat": 0,
+			"max_energy_mod": 0
+		},
+		"task_difficulty": 1,
+		"task_game": [3,5],
+		"task_description": "Upgrade living quarters with amenities and improvements to boost crew morale and well-being."
+	},
+	{
+		"task_name": "Establish Redundancy Systems",
+		"task_energy_consumption": 30,
+		"task_id": 43,
+		"task_effect": {
+			"vic_sec": 20,
+			"vic_sur": 20,
+			"vic_dev": 10,
+			"morale": 10,
+			"integrity": 20,
+			"health": 0,
+			"environment": 10,
+			"threat": -10,
+			"max_energy_mod": 10
+		},
+		"task_difficulty": 3,
+		"task_game": [3,5],
+		"task_description": "Build backup power sources, life support, and storage facilities to ensure resilience in case of emergencies."
+	},
+	{
+		"task_name": "Refine Communication Network",
+		"task_energy_consumption": 22,
+		"task_id": 44,
+		"task_effect": {
+			"vic_sec": 10,
+			"vic_sur": 10,
+			"vic_dev": 15,
+			"morale": 15,
+			"integrity": 25,
+			"health": 0,
+			"environment": 5,
+			"threat": -5,
+			"max_energy_mod": 5
+		},
+		"task_difficulty": 2,
+		"task_game": [3,5],
+		"task_description": "Improve the reliability and efficiency of the communication network for seamless information flow across the colony."
+	},
+	{
+		"task_name": "Implement Waste Recycling",
+		"task_energy_consumption": 35,
+		"task_id": 45,
+		"task_effect": {
+			"vic_sec": 10,
+			"vic_sur": 20,
+			"vic_dev": 20,
+			"morale": 5,
+			"integrity": 15,
+			"health": 10,
+			"environment": 25,
+			"threat": 0,
+			"max_energy_mod": 0
+		},
+		"task_difficulty": 2,
+		"task_game": [3,5],
+		"task_description": "Establish comprehensive systems to recycle waste products, minimizing environmental impact and maximizing resource reuse."
+	},
+	{
+		"task_name": "Conduct Ecological Studies",
+		"task_energy_consumption": 18,
+		"task_id": 46,
+		"task_effect": {
+			"vic_sec": 5,
+			"vic_sur": 10,
+			"vic_dev": 20,
+			"morale": 10,
+			"integrity": 15,
+			"health": 5,
+			"environment": 15,
+			"threat": 0,
+			"max_energy_mod": 0
+		},
+		"task_difficulty": 2,
+		"task_game": [3,5],
+		"task_description": "Undertake in-depth research into the local ecosystem to better understand and coexist with the planet's native life."
+	},
+	{
+		"task_name": "Enhance Food Production",
+		"task_energy_consumption": 22,
+		"task_id": 47,
+		"task_effect": {
+			"vic_sec": 0,
+			"vic_sur": 25,
+			"vic_dev": 15,
+			"morale": 15,
+			"integrity": 10,
+			"health": 15,
+			"environment": 10,
+			"threat": 0,
+			"max_energy_mod": 0
+		},
+		"task_difficulty": 2,
+		"task_game": [3,5],
+		"task_description": "Improve agricultural techniques and facilities to increase food yields and nutritional variety."
+	},
+	{
+		"task_name": "Upgrade Defense Infrastructure",
+		"task_energy_consumption": 28,
+		"task_id": 48,
+		"task_effect": {
+			"vic_sec": 25,
+			"vic_sur": 10,
+			"vic_dev": 10,
+			"morale": 5,
+			"integrity": 20,
+			"health": -5,
+			"environment": -5,
+			"threat": -20,
+			"max_energy_mod": 0
+		},
+		"task_difficulty": 3,
+		"task_game": [3,5],
+		"task_description": "Modernize defensive systems and protocols to ensure the long-term security of the colony."
+	},
+	{
+		"task_name": "Develop Cultural Facilities",
+		"task_energy_consumption": 32,
+		"task_id": 49,
+		"task_effect": {
+			"vic_sec": 5,
+			"vic_sur": 5,
+			"vic_dev": 15,
+			"morale": 30,
+			"integrity": 20,
+			"health": 10,
+			"environment": 5,
+			"threat": 0,
+			"max_energy_mod": 0
+		},
+		"task_difficulty": 2,
+		"task_game": [3,5],
+		"task_description": "Construct facilities for recreation, arts, and cultural activities to enrich the lives of the colonists."
+	},
+	{
+		"task_name": "Establish Training Programs",
+		"task_energy_consumption": 38,
+		"task_id": 50,
+		"task_effect": {
+			"vic_sec": 15,
+			"vic_sur": 15,
+			"vic_dev": 20,
+			"morale": 15,
+			"integrity": 20,
+			"health": 0,
+			"environment": 0,
+			"threat": 0,
+			"max_energy_mod": 0
+		},
+		"task_difficulty": 2,
+		"task_game": [3,5],
+		"task_description": "Implement ongoing training and education programs to maintain and improve the skills of the colony's workforce."
+	},
+	{
+		"task_name": "Refine Resource Distribution",
+		"task_energy_consumption": 24,
+		"task_id": 51,
+		"task_effect": {
+			"vic_sec": 10,
+			"vic_sur": 20,
+			"vic_dev": 20,
+			"morale": 15,
+			"integrity": 20,
+			"health": 0,
+			"environment": 5,
+			"threat": 0,
+			"max_energy_mod": 0
+		},
+		"task_difficulty": 2,
+		"task_game": [3,5],
+		"task_description": "Optimize the allocation of resources to ensure equitable distribution and prevent shortages."
+	},
+	{
+		"task_name": "Enhance Energy Efficiency",
+		"task_energy_consumption": 21,
+		"task_id": 52,
+		"task_effect": {
+			"vic_sec": 0,
+			"vic_sur": 15,
+			"vic_dev": 25,
+			"morale": 10,
+			"integrity": 20,
+			"health": 0,
+			"environment": 15,
+			"threat": 0,
+			"max_energy_mod": 5
+		},
+		"task_difficulty": 2,
+		"task_game": [3,5],
+		"task_description": "Implement energy-saving technologies and practices to reduce consumption and increase sustainability."
+	},
+	{
+		"task_name": "Develop Advanced Medical Tech",
+		"task_energy_consumption": 26,
+		"task_id": 53,
+		"task_effect": {
+			"vic_sec": 5,
+			"vic_sur": 15,
+			"vic_dev": 20,
+			"morale": 15,
+			"integrity": 20,
+			"health": 20,
+			"environment": 0,
+			"threat": 0,
+			"max_energy_mod": 0
+		},
+		"task_difficulty": 3,
+		"task_game": [3,5],
+		"task_description": "Research and develop cutting-edge medical technologies to improve healthcare outcomes and longevity."
+	},
+	{
+		"task_name": "Establish Environmental Monitoring",
+		"task_energy_consumption": 31,
+		"task_id": 54,
+		"task_effect": {
+			"vic_sec": 10,
+			"vic_sur": 15,
+			"vic_dev": 15,
+			"morale": 10,
+			"integrity": 20,
+			"health": 10,
+			"environment": 20,
+			"threat": -10,
+			"max_energy_mod": 0
+		},
+		"task_difficulty": 2,
+		"task_game": [3,5],
+		"task_description": "Deploy sensors and systems to continuously monitor environmental conditions and detect potential hazards."
+	},
+	{
+		"task_name": "Automate Base Maintenance",
+		"task_energy_consumption": 23,
+		"task_id": 55,
+		"task_effect": {
+			"vic_sec": 10,
+			"vic_sur": 20,
+			"vic_dev": 20,
+			"morale": 10,
+			"integrity": 15,
+			"health": 0,
+			"environment": 5,
+			"threat": 0,
+			"max_energy_mod": 0
+		},
+		"task_difficulty": 2,
+		"task_game": [3,5],
+		"task_description": "Implement robotic systems to automate routine maintenance tasks, freeing up personnel for other duties."
+	},
+	{
+		"task_name": "Expand Research Facilities",
+		"task_energy_consumption": 40,
+		"task_id": 56,
+		"task_effect": {
+			"vic_sec": 10,
+			"vic_sur": 10,
+			"vic_dev": 30,
+			"morale": 15,
+			"integrity": 20,
+			"health": 0,
+			"environment": 10,
+			"threat": 0,
+			"max_energy_mod": 0
+		},
+		"task_difficulty": 3,
+		"task_game": [3,5],
+		"task_description": "Construct additional research labs and facilities to support ongoing scientific investigations."
+	},
+	{
+		"task_name": "Develop Advanced Materials",
+		"task_energy_consumption": 27,
+		"task_id": 57,
+		"task_effect": {
+			"vic_sec": 15,
+			"vic_sur": 20,
+			"vic_dev": 25,
+			"morale": 10,
+			"integrity": 15,
+			"health": 0,
+			"environment": 0,
+			"threat": 0,
+			"max_energy_mod": 0
+		},
+		"task_difficulty": 3,
+		"task_game": [],
+		"task_description": "Research and produce high-performance materials with enhanced durability, efficiency, or other desirable properties."
+	},
+	{
+		"task_name": "Implement AI-Assisted Management",
+		"task_energy_consumption": 33,
+		"task_id": 58,
+		"task_effect": {
+			"vic_sec": 20,
+			"vic_sur": 20,
+			"vic_dev": 20,
+			"morale": 10,
+			"integrity": 20,
+			"health": 0,
+			"environment": 5,
+			"threat": 0,
+			"max_energy_mod": 0
+		},
+		"task_difficulty": 3,
+		"task_game": [3,5],
+		"task_description": "Integrate artificial intelligence systems to optimize resource allocation, scheduling, and other colony management functions."
+	},
+	{
+		"task_name": "Establish Cultural Exchange",
+		"task_energy_consumption": 29,
+		"task_id": 59,
+		"task_effect": {
+			"vic_sec": 10,
+			"vic_sur": 10,
+			"vic_dev": 10,
+			"morale": 30,
+			"integrity": 25,
+			"health": 10,
+			"environment": 10,
+			"threat": -10,
+			"max_energy_mod": 0
+		},
+		"task_difficulty": 2,
+		"task_game": [3,5],
+		"task_description": "Develop programs and facilities to foster cultural exchange and social interaction within the colony."
+	},
+	{
+		"task_name": "Prepare for Long-Term Expansion",
+		"task_energy_consumption": 45,
+		"task_id": 60,
+		"task_effect": {
+			"vic_sec": 20,
+			"vic_sur": 20,
+			"vic_dev": 30,
+			"morale": 10,
+			"integrity": 20,
+			"health": 0,
+			"environment": 10,
+			"threat": 0,
+			"max_energy_mod": 0
+		},
+		"task_difficulty": 3,
+		"task_game": [3,5],
+		"task_description": "Conduct feasibility studies and preliminary planning for future expansion beyond the current settlement."
+	}
+]

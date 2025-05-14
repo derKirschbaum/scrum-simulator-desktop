@@ -1,0 +1,249 @@
+[gd_scene load_steps=13 format=3 uid="uid://b4d1l6c2htvct"]
+
+[ext_resource type="Script" path="res://Scripts/taskboard/taskboard.gd" id="1_mun56"]
+[ext_resource type="PackedScene" uid="uid://ctwg1qm5btawd" path="res://Prefabs/post_it.tscn" id="2_tv8p4"]
+[ext_resource type="PackedScene" uid="uid://dp837o0t4lnju" path="res://Prefabs/pause_menu.tscn" id="2_vov6o"]
+[ext_resource type="Script" path="res://Scripts/taskboard/column_area.gd" id="11_tnali"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u786y"]
+bg_color = Color(1, 1, 1, 1)
+border_color = Color(0.416507, 0.415792, 0.454801, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_ltr16"]
+font_size = 90
+font_color = Color(0.0259111, 0.751586, 0.971017, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_tqe7q"]
+font_size = 50
+font_color = Color(0.0259111, 0.751586, 0.971017, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7j40p"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.94902, 0.615686, 0, 1)
+border_blend = true
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3j57j"]
+size = Vector2(360, 808)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tjyvg"]
+size = Vector2(432, 808)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5t3gs"]
+size = Vector2(440, 808)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ww7ui"]
+size = Vector2(464, 808)
+
+[node name="TaskBoard" type="Control" node_paths=PackedStringArray("backlog_hightlight", "todo_highlight", "backlog_area", "todo_area")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_mun56")
+task_card = ExtResource("2_tv8p4")
+backlog_hightlight = NodePath("backlog/highlight")
+todo_highlight = NodePath("todo/highlight2")
+backlog_area = NodePath("backlog/backlog_area")
+todo_area = NodePath("todo/todo_area")
+
+[node name="BG" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_u786y")
+metadata/_edit_lock_ = true
+
+[node name="Task board" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.533
+anchor_right = 0.533
+offset_left = -319.36
+offset_top = 8.0
+offset_right = 192.64
+offset_bottom = 136.0
+text = "Scrum Board"
+label_settings = SubResource("LabelSettings_ltr16")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 496.0
+offset_top = 224.0
+offset_right = 504.0
+offset_bottom = 1040.0
+color = Color(0.74978, 0.74978, 0.74978, 1)
+metadata/_edit_lock_ = true
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 952.0
+offset_top = 224.0
+offset_right = 960.0
+offset_bottom = 1040.0
+color = Color(0.74978, 0.74978, 0.74978, 1)
+metadata/_edit_lock_ = true
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 1416.0
+offset_top = 224.0
+offset_right = 1424.0
+offset_bottom = 1040.0
+color = Color(0.74978, 0.74978, 0.74978, 1)
+metadata/_edit_lock_ = true
+
+[node name="backlog" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.533
+anchor_right = 0.533
+offset_left = -983.36
+offset_top = 120.0
+offset_right = -527.36
+offset_bottom = 248.0
+text = "Backlog"
+label_settings = SubResource("LabelSettings_tqe7q")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="highlight" type="Panel" parent="backlog"]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.588
+anchor_top = 0.875
+anchor_right = 0.588
+anchor_bottom = 0.875
+offset_left = -180.128
+offset_right = 179.872
+offset_bottom = 808.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_7j40p")
+
+[node name="backlog_area" type="Area2D" parent="backlog" node_paths=PackedStringArray("backlog_highlight", "todo_highlight")]
+position = Vector2(-496, -120)
+script = ExtResource("11_tnali")
+backlog_highlight = NodePath("../highlight")
+todo_highlight = NodePath("../../todo/highlight2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="backlog/backlog_area"]
+position = Vector2(764, 636)
+shape = SubResource("RectangleShape2D_3j57j")
+
+[node name="todo" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.533
+anchor_right = 0.533
+offset_left = -519.36
+offset_top = 120.0
+offset_right = -63.36
+offset_bottom = 248.0
+text = "To do"
+label_settings = SubResource("LabelSettings_tqe7q")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="highlight2" type="Panel" parent="todo"]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.588
+anchor_top = 0.875
+anchor_right = 0.588
+anchor_bottom = 0.875
+offset_left = -260.128
+offset_right = 171.872
+offset_bottom = 808.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_7j40p")
+
+[node name="todo_area" type="Area2D" parent="todo" node_paths=PackedStringArray("backlog_highlight", "todo_highlight")]
+position = Vector2(-504, -120)
+script = ExtResource("11_tnali")
+backlog_highlight = NodePath("../../backlog/highlight")
+todo_highlight = NodePath("../highlight2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="todo/todo_area"]
+position = Vector2(728, 636)
+shape = SubResource("RectangleShape2D_tjyvg")
+
+[node name="in-progress" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.533
+anchor_right = 0.533
+offset_left = -63.36
+offset_top = 120.0
+offset_right = 392.64
+offset_bottom = 248.0
+text = "In-progress"
+label_settings = SubResource("LabelSettings_tqe7q")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="in-progress_area" type="Area2D" parent="in-progress"]
+position = Vector2(-504, -120)
+script = ExtResource("11_tnali")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="in-progress/in-progress_area"]
+position = Vector2(732, 636)
+shape = SubResource("RectangleShape2D_5t3gs")
+
+[node name="Done" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.533
+anchor_right = 0.533
+offset_left = 400.64
+offset_top = 119.0
+offset_right = 856.64
+offset_bottom = 247.0
+text = "Done"
+label_settings = SubResource("LabelSettings_tqe7q")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="done_area" type="Area2D" parent="Done"]
+position = Vector2(-496, -119)
+script = ExtResource("11_tnali")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Done/done_area"]
+position = Vector2(736, 636)
+shape = SubResource("RectangleShape2D_ww7ui")
+
+[node name="pause_menu" parent="." instance=ExtResource("2_vov6o")]
+visible = false
+layout_mode = 0
+offset_left = 801.0
+offset_top = 262.0
+offset_right = 1121.0
+offset_bottom = 766.0
+metadata/_edit_lock_ = true
+
+[connection signal="body_entered" from="backlog/backlog_area" to="backlog/backlog_area" method="on_task_enter"]
+[connection signal="body_exited" from="backlog/backlog_area" to="backlog/backlog_area" method="on_task_leaves"]
+[connection signal="body_entered" from="todo/todo_area" to="todo/todo_area" method="on_task_enter"]
+[connection signal="body_exited" from="todo/todo_area" to="todo/todo_area" method="on_task_leaves"]
+[connection signal="body_entered" from="in-progress/in-progress_area" to="in-progress/in-progress_area" method="on_task_enter"]
+[connection signal="body_exited" from="in-progress/in-progress_area" to="in-progress/in-progress_area" method="on_task_leaves"]
+[connection signal="body_entered" from="Done/done_area" to="Done/done_area" method="on_task_enter"]
+[connection signal="body_exited" from="Done/done_area" to="Done/done_area" method="on_task_leaves"]

@@ -1,0 +1,78 @@
+[gd_scene load_steps=16 format=3 uid="uid://djb4611iqognu"]
+
+[ext_resource type="AudioStream" uid="uid://cs4dft0s5dckv" path="res://Assets/Sound tracks/Loops/ogg/1. Orbital Exodus (Loop).ogg" id="1_thcvc"]
+[ext_resource type="Script" path="res://Scripts/audio_manager.gd" id="1_vmolh"]
+[ext_resource type="AudioStream" uid="uid://8a46mltyg4yx" path="res://Assets/Sound tracks/Loops/ogg/2. Nova Nexus (Loop).ogg" id="2_i5ggw"]
+[ext_resource type="AudioStream" uid="uid://xbbovy2bv8ha" path="res://Assets/Sound tracks/Loops/ogg/3. The Quantum Reckoning (Loop).ogg" id="3_r0xpv"]
+[ext_resource type="AudioStream" uid="uid://cpyk5v8m0rb6n" path="res://Assets/Sound tracks/Loops/ogg/12. The Martian Mirage (Loop).ogg" id="4_pmm1x"]
+[ext_resource type="AudioStream" uid="uid://b2i2hsmeguq0i" path="res://Assets/Sound tracks/Loops/ogg/30. Celestial Voyage (Loop).ogg" id="5_1cy6l"]
+[ext_resource type="AudioStream" uid="uid://ck3mdb306widm" path="res://Assets/Sound tracks/Loops/ogg/26. Galactic Drift (Loop).ogg" id="6_o7jbr"]
+[ext_resource type="AudioStream" uid="uid://bw0e7o1hg7oty" path="res://Assets/Sound tracks/Loops/ogg/24. Galactic Genesis (Loop).ogg" id="7_a686u"]
+[ext_resource type="AudioStream" uid="uid://dya72ff1k7bqi" path="res://Assets/Sound tracks/Loops/ogg/8. Cybernetic Conspiracy (Loop).ogg" id="8_45el8"]
+[ext_resource type="AudioStream" uid="uid://dfr27x7283pi7" path="res://Assets/JDSherbert - Ultimate UI SFX Pack/Full/Stereo/ogg/JDSherbert - Ultimate UI SFX Pack - Cursor - 14.ogg" id="10_4abq8"]
+[ext_resource type="AudioStream" uid="uid://b48qtp148bdor" path="res://Assets/JDSherbert - Ultimate UI SFX Pack/Full/Stereo/ogg/JDSherbert - Ultimate UI SFX Pack - Select - 6.ogg" id="11_k043h"]
+
+[sub_resource type="AudioStreamPlaylist" id="AudioStreamPlaylist_q3g0h"]
+shuffle = true
+fade_time = 1.0
+stream_count = 3
+stream_0 = ExtResource("1_thcvc")
+stream_1 = ExtResource("2_i5ggw")
+stream_2 = ExtResource("3_r0xpv")
+
+[sub_resource type="AudioStreamPlaylist" id="AudioStreamPlaylist_cpjlr"]
+shuffle = true
+fade_time = 1.0
+stream_count = 5
+stream_0 = ExtResource("4_pmm1x")
+stream_1 = ExtResource("5_1cy6l")
+stream_2 = ExtResource("6_o7jbr")
+stream_3 = ExtResource("7_a686u")
+stream_4 = ExtResource("8_45el8")
+
+[sub_resource type="AudioStreamInteractive" id="AudioStreamInteractive_10i44"]
+clip_count = 2
+clip_0/name = &"Main_Menu"
+clip_0/stream = SubResource("AudioStreamPlaylist_q3g0h")
+clip_0/auto_advance = 0
+clip_1/name = &"Gameplay"
+clip_1/stream = SubResource("AudioStreamPlaylist_cpjlr")
+clip_1/auto_advance = 0
+_transitions = {
+Vector2i(0, 1): {
+"fade_beats": 4,
+"fade_mode": 2,
+"from_time": 2,
+"to_time": 1
+},
+Vector2i(1, 2): {
+"fade_beats": 1,
+"fade_mode": 1,
+"from_time": 2,
+"to_time": 1
+}
+}
+
+[sub_resource type="AudioStreamInteractive" id="AudioStreamInteractive_p6wsi"]
+clip_count = 2
+clip_0/name = &"menu_hover"
+clip_0/stream = ExtResource("10_4abq8")
+clip_0/auto_advance = 0
+clip_1/name = &"menu_click"
+clip_1/stream = ExtResource("11_k043h")
+clip_1/auto_advance = 0
+
+[node name="AudioManager" type="Node" node_paths=PackedStringArray("bgm_player", "sfx_player")]
+script = ExtResource("1_vmolh")
+bgm_player = NodePath("Music")
+sfx_player = NodePath("SFX")
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamInteractive_10i44")
+volume_db = -10.0
+autoplay = true
+bus = &"Music"
+
+[node name="SFX" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamInteractive_p6wsi")
+bus = &"SFX"

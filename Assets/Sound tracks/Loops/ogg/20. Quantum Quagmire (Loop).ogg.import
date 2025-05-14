@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ci4wjcy4h1p5k"
+path="res://.godot/imported/20. Quantum Quagmire (Loop).ogg-5353ae1db27cab4afdd66034cc1a6b54.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Sound tracks/Loops/ogg/20. Quantum Quagmire (Loop).ogg"
+dest_files=["res://.godot/imported/20. Quantum Quagmire (Loop).ogg-5353ae1db27cab4afdd66034cc1a6b54.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

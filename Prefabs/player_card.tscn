@@ -1,0 +1,41 @@
+[gd_scene load_steps=4 format=3 uid="uid://ds0ttt0vxav8q"]
+
+[ext_resource type="Texture2D" uid="uid://ddgavm4hwe3br" path="res://Assets/person-fill.svg" id="1_k5xsj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e3dxw"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 60
+corner_radius_bottom_left = 60
+
+[sub_resource type="LabelSettings" id="LabelSettings_hhewx"]
+font_color = Color(0, 0, 0, 1)
+
+[node name="Player 1" type="Panel"]
+offset_right = 384.0
+offset_bottom = 128.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_e3dxw")
+
+[node name="Player_name" type="Label" parent="."]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 8.0
+offset_right = 376.0
+offset_bottom = 40.0
+text = "Player 1"
+label_settings = SubResource("LabelSettings_hhewx")
+vertical_alignment = 1
+
+[node name="Current_task" type="Label" parent="."]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 40.0
+offset_right = 376.0
+offset_bottom = 72.0
+text = "Task: None"
+label_settings = SubResource("LabelSettings_hhewx")
+vertical_alignment = 1
+
+[node name="Person-fill" type="Sprite2D" parent="."]
+position = Vector2(65.2, 62.8)
+scale = Vector2(0.214062, 0.214062)
+texture = ExtResource("1_k5xsj")

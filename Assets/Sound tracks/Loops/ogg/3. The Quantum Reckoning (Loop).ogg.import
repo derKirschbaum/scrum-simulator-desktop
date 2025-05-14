@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://xbbovy2bv8ha"
+path="res://.godot/imported/3. The Quantum Reckoning (Loop).ogg-afa95402f4d33946ef7e816ce46befad.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Sound tracks/Loops/ogg/3. The Quantum Reckoning (Loop).ogg"
+dest_files=["res://.godot/imported/3. The Quantum Reckoning (Loop).ogg-afa95402f4d33946ef7e816ce46befad.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

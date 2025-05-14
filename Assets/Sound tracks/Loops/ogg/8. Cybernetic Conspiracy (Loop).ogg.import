@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dya72ff1k7bqi"
+path="res://.godot/imported/8. Cybernetic Conspiracy (Loop).ogg-7bc6cc9c53c8db89ef0896274bb3ed86.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Sound tracks/Loops/ogg/8. Cybernetic Conspiracy (Loop).ogg"
+dest_files=["res://.godot/imported/8. Cybernetic Conspiracy (Loop).ogg-7bc6cc9c53c8db89ef0896274bb3ed86.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

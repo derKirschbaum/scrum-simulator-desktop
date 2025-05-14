@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://t1nhr3wv2wcr"
+path="res://.godot/imported/14. Starship Stranded (Loop).ogg-ee6818b134da6a02a6de257f3350c288.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Sound tracks/Loops/ogg/14. Starship Stranded (Loop).ogg"
+dest_files=["res://.godot/imported/14. Starship Stranded (Loop).ogg-ee6818b134da6a02a6de257f3350c288.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

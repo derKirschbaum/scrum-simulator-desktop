@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b2i2hsmeguq0i"
+path="res://.godot/imported/30. Celestial Voyage (Loop).ogg-799a34d6422ba27c6c03b4d89a283494.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Sound tracks/Loops/ogg/30. Celestial Voyage (Loop).ogg"
+dest_files=["res://.godot/imported/30. Celestial Voyage (Loop).ogg-799a34d6422ba27c6c03b4d89a283494.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

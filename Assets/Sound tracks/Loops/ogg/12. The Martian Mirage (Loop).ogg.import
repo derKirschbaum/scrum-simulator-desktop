@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cpyk5v8m0rb6n"
+path="res://.godot/imported/12. The Martian Mirage (Loop).ogg-d3b9d11dc38cb192f1c7fcd3b1212c0a.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Sound tracks/Loops/ogg/12. The Martian Mirage (Loop).ogg"
+dest_files=["res://.godot/imported/12. The Martian Mirage (Loop).ogg-d3b9d11dc38cb192f1c7fcd3b1212c0a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,382 @@
+[
+	{
+		"task_name": "Build Garden",
+		"task_energy_consumption": 10,
+		"task_id": 1,
+		"task_effect": {
+			"vic_sec": 0,
+			"vic_sur": 10,
+			"vic_dev": 0,
+			"morale": 10,
+			"integrity": 10,
+			"health" : 5,
+			"environment": -5,
+			"threat": 5,
+			"max_energy_mod": 0
+		},
+		"task_game": [5],
+		"task_difficulty": 0,
+		"task_description": "A basic building where plants are grown for food."
+	},
+	{
+		"task_name": "Build Water Reclaimer",
+		"task_energy_consumption": 12,
+		"task_id": 2,
+		"task_effect": {
+			"vic_sec": 0,
+			"vic_sur": 15,
+			"vic_dev": 5,
+			"morale": 5,
+			"integrity": 10,
+			"health" : 10,
+			"environment": 5,
+			"threat": 0,
+			"max_energy_mod": 0
+		},
+		"task_game": [1,5],
+		"task_difficulty": 1,
+		"task_description": "A facility to recycle the waste water."
+	},
+	{
+		"task_name": "Plant Gene Modification",
+		"task_energy_consumption": 15,
+		"task_id": 3,
+		"task_effect": {
+			"vic_sec": 0,
+			"vic_sur": 20,
+			"vic_dev": 10,
+			"morale": 10,
+			"integrity": 5,
+			"health" : 15,
+			"environment": 5,
+			"threat": 0,
+			"max_energy_mod": 0
+		},
+		"task_game": [3],
+		"task_difficulty": 2,
+		"task_description": "Modify local plant's gene, rendering them better benefit human."
+	},
+	{
+		"task_name": "Build Soil Adaptor",
+		"task_energy_consumption": 12,
+		"task_id": 4,
+		"task_effect": {
+			"vic_sec": 0,
+			"vic_sur": 15,
+			"vic_dev": 10,
+			"morale": 5,
+			"integrity": 10,
+			"health" : 10,
+			"environment": 10,
+			"threat": 0,
+			"max_energy_mod": 0
+		},
+		"task_game": [5],
+		"task_difficulty": 2,
+		"task_description": "A building to adapt a native soil to suits Earthly plants."
+	},
+	{
+		"task_name": "Build 3D-Printer",
+		"task_energy_consumption": 18,
+		"task_id": 5,
+		"task_effect": {
+			"vic_sec": 5,
+			"vic_sur": 10,
+			"vic_dev": 20,
+			"morale": 10,
+			"integrity": 15,
+			"health" : 5,
+			"environment": 0,
+			"threat": 0,
+			"max_energy_mod": 0
+		},
+		"task_game": [3,5],
+		"task_difficulty": 1,
+		"task_description": "A building to print small component."
+	},
+	{
+		"task_name": "Build Ore Mine",
+		"task_energy_consumption": 20,
+		"task_id": 6,
+		"task_effect": {
+			"vic_sec": 10,
+			"vic_sur": 10,
+			"vic_dev": 20,
+			"morale": 0,
+			"integrity": 10,
+			"health" : -5,
+			"environment": -10,
+			"threat": 5,
+			"max_energy_mod": 0
+		},
+		"task_game": [1,3,5],
+		"task_difficulty": 1,
+		"task_description": "A building to extract mineral."
+	},
+	{
+		"task_name": "Build Solar Panel",
+		"task_energy_consumption": 15,
+		"task_id": 7,
+		"task_effect": {
+			"vic_sec": 0,
+			"vic_sur": 5,
+			"vic_dev": 15,
+			"morale": 10,
+			"integrity": 10,
+			"health" : 0,
+			"environment": 10,
+			"threat": 0,
+			"max_energy_mod": 20
+		},
+		"task_game": [5],
+		"task_difficulty": 1,
+		"task_description": "A building to generate energy. (Increase max energy)"
+	},
+	{
+		"task_name": "Build Processing Plant",
+		"task_energy_consumption": 20,
+		"task_id": 8,
+		"task_effect": {
+			"vic_sec": 10,
+			"vic_sur": 10,
+			"vic_dev": 25,
+			"morale": 5,
+			"integrity": 15,
+			"health" : -5,
+			"environment": -5,
+			"threat": 5,
+			"max_energy_mod": 0
+		},
+		"task_game": [3,5],
+		"task_difficulty": 2,
+		"task_description": "A building to process raw and basic materials into usable materials."
+	},
+	{
+		"task_name": "Build Living Quarter",
+		"task_energy_consumption": 12,
+		"task_id": 9,
+		"task_effect": {
+			"vic_sec": 0,
+			"vic_sur": 10,
+			"vic_dev": 5,
+			"morale": 15,
+			"integrity": 10,
+			"health" : 5,
+			"environment": 0,
+			"threat": 0,
+			"max_energy_mod": 0
+		},
+		"task_game": [3,5],
+		"task_difficulty": 1,
+		"task_description": "A place for you crew to sleep and rest."
+	},
+	{
+		"task_name": "Build Archives",
+		"task_energy_consumption": 10,
+		"task_id": 10,
+		"task_effect": {
+			"vic_sec": 15,
+			"vic_sur": 0,
+			"vic_dev": 10,
+			"morale": 5,
+			"integrity": 20,
+			"health" : 0,
+			"environment": 0,
+			"threat": 0,
+			"max_energy_mod": 0
+		},
+		"task_game": [3,5],
+		"task_difficulty": 1,
+		"task_description": "A place to store valuable data."
+	},
+	{
+		"task_name": "Build Laboratory",
+		"task_energy_consumption": 15,
+		"task_id": 11,
+		"task_effect": {
+			"vic_sec": 5,
+			"vic_sur": 10,
+			"vic_dev": 20,
+			"morale": 10,
+			"integrity": 15,
+			"health" : 0,
+			"environment": 0,
+			"threat": 0,
+			"max_energy_mod": 0
+		},
+		"task_game": [3,5],
+		"task_difficulty": 2,
+		"task_description": "A place to study about this world."
+	},
+	{
+		"task_name": "Explore the surrounding",
+		"task_energy_consumption": 15,
+		"task_id": 12,
+		"task_effect": {
+			"vic_sec": 5,
+			"vic_sur": 20,
+			"vic_dev": 5,
+			"morale": 10,
+			"integrity": 10,
+			"health" : -5,
+			"environment": 0,
+			"threat": 10,
+			"max_energy_mod": 0
+		},
+		"task_game": [0,1],
+		"task_difficulty": 1,
+		"task_description": "Explore around the area"
+	},
+	{
+		"task_name": "Clear local wildlife",
+		"task_energy_consumption": 20,
+		"task_id": 13,
+		"task_effect": {
+			"vic_sec": 10,
+			"vic_sur": 15,
+			"vic_dev": 0,
+			"morale": 10,
+			"integrity": 5,
+			"health" : -10,
+			"environment": -5,
+			"threat": -15,
+			"max_energy_mod": 0
+		},
+		"task_game": [0],
+		"task_difficulty": 1,
+		"task_description": "Make the area safer!"
+	},
+	{
+		"task_name": "Build Storage",
+		"task_energy_consumption": 10,
+		"task_id": 14,
+		"task_effect": {
+			"vic_sec": 10,
+			"vic_sur": 10,
+			"vic_dev": 10,
+			"morale": 5,
+			"integrity": 10,
+			"health" : 0,
+			"environment": 0,
+			"threat": 0,
+			"max_energy_mod": 0
+		},
+		"task_game": [3,5],
+		"task_difficulty": 0,
+		"task_description": "A place to store your belongings."
+	},
+	{
+		"task_name": "Build canteen",
+		"task_energy_consumption": 12,
+		"task_id": 15,
+		"task_effect": {
+			"vic_sec": 0,
+			"vic_sur": 10,
+			"vic_dev": 5,
+			"morale": 15,
+			"integrity": 10,
+			"health" : 5,
+			"environment": 0,
+			"threat": 0,
+			"max_energy_mod": 0
+		},
+		"task_game": [3,5],
+		"task_difficulty": 0,
+		"task_description": "A place for you crew to eat and relax"
+	},
+	{
+		"task_name": "Build Med bay",
+		"task_energy_consumption": 15,
+		"task_id": 16,
+		"task_effect": {
+			"vic_sec": 0,
+			"vic_sur": 10,
+			"vic_dev": 10,
+			"morale": 10,
+			"integrity": 10,
+			"health" : 20,
+			"environment": 0,
+			"threat": 0,
+			"max_energy_mod": 0
+		},
+		"task_game": [3,5],
+		"task_difficulty": 1,
+		"task_description": "A place to heal."
+	},
+	{
+		"task_name": "Build water extractor",
+		"task_energy_consumption": 18,
+		"task_id": 17,
+		"task_effect": {
+			"vic_sec": 0,
+			"vic_sur": 20,
+			"vic_dev": 10,
+			"morale": 5,
+			"integrity": 10,
+			"health" : 10,
+			"environment": -5,
+			"threat": 5,
+			"max_energy_mod": 0
+		},
+		"task_game": [3,5],
+		"task_difficulty": 1,
+		"task_description": "Extract water from underground."
+	},
+	{
+		"task_name": "Build Security tower",
+		"task_energy_consumption": 15,
+		"task_id": 18,
+		"task_effect": {
+			"vic_sec": 15,
+			"vic_sur": 10,
+			"vic_dev": 5,
+			"morale": 10,
+			"integrity": 10,
+			"health" : 0,
+			"environment": 0,
+			"threat": -10,
+			"max_energy_mod": 0
+		},
+		"task_game": [3,5],
+		"task_difficulty": 1,
+		"task_description": "A place to watch over your base and crew."
+	},
+	{
+		"task_name": "Build a Gym",
+		"task_energy_consumption": 12,
+		"task_id": 19,
+		"task_effect": {
+			"vic_sec": 0,
+			"vic_sur": 5,
+			"vic_dev": 5,
+			"morale": 15,
+			"integrity": 10,
+			"health" : 10,
+			"environment": 0,
+			"threat": 0,
+			"max_energy_mod": 0
+		},
+		"task_game": [3,5],
+		"task_difficulty": 1,
+		"task_description": "A place for exercise"
+	},
+	{
+		"task_name": "Build Power Collector",
+		"task_energy_consumption": 10,
+		"task_id": 20,
+		"task_effect": {
+			"vic_sec": 0,
+			"vic_sur": 5,
+			"vic_dev": 10,
+			"morale": 5,
+			"integrity": 10,
+			"health" : 0,
+			"environment": 0,
+			"threat": 0,
+			"max_energy_mod": 10
+		},
+		"task_game": [3,5],
+		"task_difficulty": 2,
+		"task_description": "Store your power for backup."
+	}
+]

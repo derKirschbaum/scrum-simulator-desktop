@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bw0e7o1hg7oty"
+path="res://.godot/imported/24. Galactic Genesis (Loop).ogg-0a52a4783b37be2e1072bcf048311175.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Sound tracks/Loops/ogg/24. Galactic Genesis (Loop).ogg"
+dest_files=["res://.godot/imported/24. Galactic Genesis (Loop).ogg-0a52a4783b37be2e1072bcf048311175.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
